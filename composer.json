@@ -27,7 +27,7 @@
     }
   ],
   "scripts": {
-    "post-install-cmd": [
+    "setup": [
       "php setup/ConfigGenerator.php"
     ]
   },
