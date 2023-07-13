@@ -45,6 +45,7 @@ class Payout
     protected ?string $status = null;
     protected ?string $requestDate = null;
     protected ?array $exchangeRates = null;
+    protected ?string $fakeField = null;
     /**
      * @var PayoutTransaction[]
      */
@@ -68,8 +69,25 @@ class Payout
         $this->ledgerCurrency = $ledgerCurrency;
     }
 
-    // API fields
-    //
+    /**
+     * Some comment.
+     *
+     * @return string|null
+     */
+    public function getFakeField(): ?string
+    {
+        return $this->fakeField;
+    }
+
+    /**
+     * Another comment.
+     *
+     * @param string|null $fakeField
+     */
+    public function setFakeField(?string $fakeField): void
+    {
+        $this->fakeField = $fakeField;
+    }
 
     /**
      * Gets resource token.
