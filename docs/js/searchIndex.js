@@ -6351,6 +6351,16 @@ Search.appendIndex(
             "summary": "Constructor,\u0020create\u0020a\u0020request\u0020Payout\u0020object.",
             "url": "classes/BitPaySDK-Model-Payout-Payout.html#method___construct"
         },                {
+            "fqsen": "\\BitPaySDK\\Model\\Payout\\Payout\u003A\u003AgetFakeField\u0028\u0029",
+            "name": "getFakeField",
+            "summary": "Some\u0020comment.",
+            "url": "classes/BitPaySDK-Model-Payout-Payout.html#method_getFakeField"
+        },                {
+            "fqsen": "\\BitPaySDK\\Model\\Payout\\Payout\u003A\u003AsetFakeField\u0028\u0029",
+            "name": "setFakeField",
+            "summary": "Another\u0020comment.",
+            "url": "classes/BitPaySDK-Model-Payout-Payout.html#method_setFakeField"
+        },                {
             "fqsen": "\\BitPaySDK\\Model\\Payout\\Payout\u003A\u003AgetToken\u0028\u0029",
             "name": "getToken",
             "summary": "Gets\u0020resource\u0020token.",
@@ -6700,6 +6710,11 @@ Search.appendIndex(
             "name": "exchangeRates",
             "summary": "",
             "url": "classes/BitPaySDK-Model-Payout-Payout.html#property_exchangeRates"
+        },                {
+            "fqsen": "\\BitPaySDK\\Model\\Payout\\Payout\u003A\u003A\u0024fakeField",
+            "name": "fakeField",
+            "summary": "",
+            "url": "classes/BitPaySDK-Model-Payout-Payout.html#property_fakeField"
         },                {
             "fqsen": "\\BitPaySDK\\Model\\Payout\\Payout\u003A\u003A\u0024transactions",
             "name": "transactions",
