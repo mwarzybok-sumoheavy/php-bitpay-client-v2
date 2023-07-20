@@ -10,13 +10,30 @@ on:
       - 'master'
 
 jobs:
-  phpunit:
+  phpunit9:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: php-actions/composer@v5
+        with:
+          php_version: '8.0'
+          args: --ignore-platform-reqs
+      - uses: php-actions/phpunit@v3
+        with:
+          configuration: phpunit.xml
+          php_version: ${{ matrix.php-version }}
+          php_extensions: bcmath gmp xdebug
+          testsuite: Unit
+          version: 9
+
+  phpunit10:
     runs-on: ubuntu-20.04
 
     strategy:
       matrix:
-        php-version: ['8.0', '8.1', '8.2']
-    
+        php-version: [ '8.1', '8.2' ]
+
     steps:
       - uses: actions/checkout@v3
       - uses: php-actions/composer@v5
@@ -26,13 +43,10 @@ jobs:
       - uses: php-actions/phpunit@v3
         with:
           configuration: phpunit.xml
-          coverage_html: "test/unit/_html"
           php_version: ${{ matrix.php-version }}
           php_extensions: bcmath gmp xdebug
           testsuite: Unit
-          version: 9
-        env:
-          XDEBUG_MODE: coverage
+          version: 10
   phpcs:
     runs-on: ubuntu-latest
     
