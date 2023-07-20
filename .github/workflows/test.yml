@@ -30,7 +30,7 @@ jobs:
           php_version: ${{ matrix.php-version }}
           php_extensions: bcmath gmp xdebug
           testsuite: Unit
-          version: 10
+          version: 9
         env:
           XDEBUG_MODE: coverage
   phpcs:
